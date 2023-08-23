@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { useState } from 'react'
-import { getServerSideProps } from './api/todos'
+//import { getServerSideProps } from './api/todos'
+import { getStaticProps } from './api/todos2'
 
 import styled from 'styled-components'
 
@@ -59,4 +60,4 @@ export default function Home({todos}) {
   )
 }
 
-export { getServerSideProps }
+export { getStaticProps }
